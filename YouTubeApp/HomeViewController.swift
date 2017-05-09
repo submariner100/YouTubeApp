@@ -21,6 +21,25 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
           collectionView?.register(HomeViewControllerCell.self, forCellWithReuseIdentifier: "cell")
           collectionView?.backgroundColor = UIColor.white
           navigationController?.navigationBar.isTranslucent = false
+          collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
+          collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
+          
+          
+          customMenuBar()
+          
+     }
+     
+     let menuBar = MenuBar()
+     
+     func customMenuBar() {
+          
+          view.addSubview(menuBar)
+          menuBar.translatesAutoresizingMaskIntoConstraints = false
+          menuBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+          menuBar.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+          menuBar.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+          menuBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
+          
           
      }
      
