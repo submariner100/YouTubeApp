@@ -13,10 +13,14 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
      override func viewDidLoad() {
           super.viewDidLoad()
           
-          navigationItem.title = "Home"
+          let headingLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
+          headingLabel.text = "Youtube"
+          headingLabel.textColor = UIColor.white
+          headingLabel.font = UIFont.systemFont(ofSize: 20)
+          navigationItem.titleView = headingLabel
           collectionView?.register(HomeViewControllerCell.self, forCellWithReuseIdentifier: "cell")
           collectionView?.backgroundColor = UIColor.white
-          
+          navigationController?.navigationBar.isTranslucent = false
           
      }
      
@@ -29,14 +33,13 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
 
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeViewControllerCell
           
-          
           return cell
      
      }
      
      func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
           
-          return CGSize(width: view.frame.width, height: 230)
+          return CGSize(width: view.frame.width, height: 250)
           
      }
      
@@ -44,7 +47,6 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
           
           return 0
      }
-     
-
+  
 }
 
