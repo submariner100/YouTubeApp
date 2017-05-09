@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "18702B45665C02B27DC2957CD57FD17DB9AB1B00",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6E656DA11FB422A7B686365B6E22B8C569712BC8" : 9223372036854775807,
+    "18702B45665C02B27DC2957CD57FD17DB9AB1B00" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ACA33024-05BE-4D3D-8150-31C6DD668A6B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6E656DA11FB422A7B686365B6E22B8C569712BC8" : "",
+    "18702B45665C02B27DC2957CD57FD17DB9AB1B00" : "YouTubeApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YouTubeApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YouTubeApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:submariner100\/YouTubeApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "18702B45665C02B27DC2957CD57FD17DB9AB1B00"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:submariner100\/Project6b.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6E656DA11FB422A7B686365B6E22B8C569712BC8"
+    }
+  ]
+}
