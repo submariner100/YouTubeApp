@@ -10,6 +10,8 @@ import UIKit
 
 class MenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
      
+     let imageNames = ["home", "trending", "subscriptions", "library"]
+     
      override init(frame: CGRect) {
           super.init(frame: frame)
           
@@ -22,7 +24,7 @@ class MenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UIC
          collectionView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
          collectionView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
          collectionView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+         collectionView.register(MenuCell.self, forCellWithReuseIdentifier: "cell")
      }
      
      let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
@@ -35,9 +37,11 @@ class MenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UIC
      
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
           
-          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MenuCell
           
-          cell.backgroundColor = UIColor.blue
+          
+          cell.thumbImage.image = UIImage(named: imageNames[indexPath.item])
+          
           return cell
           
      }
