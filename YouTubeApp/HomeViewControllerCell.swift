@@ -13,8 +13,18 @@ class HomeViewControllerCell: UICollectionViewCell {
      override init(frame: CGRect) {
           super.init(frame: frame)
           
+          
+          
           setupViews()
      }
+     
+     var video: Video? {
+          
+          didSet {
+               
+          }
+     }
+
      
      let thumbnailImageview = UIImageView()
      let profileImageView = UIImageView()

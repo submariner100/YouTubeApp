@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2752888F1ECA095500D28A07 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752888E1ECA095500D28A07 /* Video.swift */; };
+		275288911ECA09BF00D28A07 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275288901ECA09BF00D28A07 /* Channel.swift */; };
 		276B45761EC2200D001E2D14 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B45751EC2200D001E2D14 /* MenuBar.swift */; };
 		276B45781EC243BE001E2D14 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B45771EC243BE001E2D14 /* MenuCell.swift */; };
 		277E97711EC1C04B00EFE2F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277E97701EC1C04B00EFE2F5 /* AppDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2752888E1ECA095500D28A07 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		275288901ECA09BF00D28A07 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		276B45751EC2200D001E2D14 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		276B45771EC243BE001E2D14 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		277E976D1EC1C04B00EFE2F5 /* YouTubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +64,8 @@
 		276B45731EC21D0D001E2D14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2752888E1ECA095500D28A07 /* Video.swift */,
+				275288901ECA09BF00D28A07 /* Channel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -174,7 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275288911ECA09BF00D28A07 /* Channel.swift in Sources */,
 				277E97731EC1C04B00EFE2F5 /* HomeViewController.swift in Sources */,
+				2752888F1ECA095500D28A07 /* Video.swift in Sources */,
 				276B45781EC243BE001E2D14 /* MenuCell.swift in Sources */,
 				277E97711EC1C04B00EFE2F5 /* AppDelegate.swift in Sources */,
 				276B45761EC2200D001E2D14 /* MenuBar.swift in Sources */,
