@@ -26,7 +26,34 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
           
           
           customMenuBar()
+          customButtons()
           
+     }
+     
+     func customButtons() {
+     
+          let search = UIImage(named: "search")?.withRenderingMode(.alwaysTemplate)
+          let searchButton = UIBarButtonItem(image: search, style: .plain, target: self, action: #selector(handleSearch))
+          searchButton.tintColor = UIColor.white
+          
+          let more = UIImage(named: "more")?.withRenderingMode(.alwaysTemplate)
+          
+          let moreButton = UIBarButtonItem(image: more, style: .plain, target: self, action: #selector(handleMore))
+          moreButton.tintColor = UIColor.white
+          
+          navigationItem.rightBarButtonItems = [moreButton, searchButton]
+          
+     
+     }
+     
+     func handleSearch() {
+          
+          print(123)
+     }
+     
+     func handleMore() {
+          
+          print(4321)
      }
      
      let menuBar = MenuBar()

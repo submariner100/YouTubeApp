@@ -10,7 +10,7 @@ import UIKit
 
 class MenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
      
-     let imageNames = ["home", "trending", "subscriptions", "library"]
+     let imageNames = ["new", "songs", "play", "heart"]
      
      override init(frame: CGRect) {
           super.init(frame: frame)
@@ -40,7 +40,9 @@ class MenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UIC
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MenuCell
           
           
-          cell.thumbImage.image = UIImage(named: imageNames[indexPath.item])
+          cell.thumbImage.image = UIImage(named: imageNames[indexPath.item])?.withRenderingMode(.alwaysTemplate)
+          cell.tintColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)
+          
           
           return cell
           
