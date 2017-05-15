@@ -21,6 +21,11 @@ class HomeViewControllerCell: UICollectionViewCell {
      var video: Video? {
           
           didSet {
+               thumbnailImageview.image = UIImage(named: (video?.thumbnailImageName)!)
+               profileImageView.image = UIImage(named: (video?.channel?.profileImageName)!)
+               titleTextView.text = video?.title
+               subTitleTextView.text = "\((video?.channel?.name)!) - \((video?.views)!) - \((video?.date)!)"
+               
                
           }
      }
@@ -87,7 +92,7 @@ class HomeViewControllerCell: UICollectionViewCell {
           separatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
           separatorView.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8).isActive = true
           
-//
+
 //          addSubview(separatorView)
 //          subTitleTextView.translatesAutoresizingMaskIntoConstraints = false
 //          subTitleTextView.backgroundColor = UIColor.orange
@@ -96,7 +101,7 @@ class HomeViewControllerCell: UICollectionViewCell {
 //               .isActive = true
 //          subTitleTextView.rightAnchor.constraint(equalTo: thumbnailImageview.rightAnchor).isActive = true
 //          subTitleTextView.heightAnchor.constraint(equalToConstant: 18).isActive = true
-     
+//     
      }
      
      required init?(coder aDecoder: NSCoder) {

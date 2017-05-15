@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class Channel: NSObject {
      
      var name: String?

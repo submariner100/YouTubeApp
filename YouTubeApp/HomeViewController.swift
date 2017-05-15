@@ -10,6 +10,70 @@ import UIKit
 
 class HomeViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+          var videos: [Video]? = {
+          
+               
+               let channel = Channel()
+               channel.name = "ChainsmokersVEVO"
+               channel.profileImageName = "Mike.png"
+               
+               let paris = Video()
+               paris.channel = channel
+               paris.thumbnailImageName = "thumbnail.png"
+               paris.views = "100,000,000"
+               paris.date = "2 months ago"
+               paris.title = "The Chainsmokers - Paris"
+               
+               
+               let closer = Video()
+               closer.channel = channel
+               closer.thumbnailImageName = "Mike.png"
+               closer.views = "500,000,000"
+               closer.date = "1 months ago"
+               closer.title = "The Chainsmokers - Closer"
+               
+               let settingFires = Video()
+               settingFires.channel = channel
+               settingFires.thumbnailImageName = "thumbnail1.png"
+               settingFires.views = "300,000,000"
+               settingFires.date = "2 weeks ago"
+               settingFires.title = "The Chainsmokers - Setting Fires"
+               
+               
+               let allWeKnow = Video()
+               allWeKnow.channel = channel
+               allWeKnow.thumbnailImageName = "thumbnail2.png"
+               allWeKnow.views = "400,000,000"
+               allWeKnow.date = "6 months ago"
+               allWeKnow.title = "The Chainsmokers - All We Know"
+               
+               
+               let hello = Video()
+               hello.channel = channel
+               hello.thumbnailImageName = "thumbnail3.png"
+               hello.views = "700,000,000"
+               hello.date = "7 months ago"
+               hello.title = "The Chainsmokers - Hello"
+               
+               
+               let imagine = Video()
+               imagine.channel = channel
+               imagine.thumbnailImageName = "thumbnail4.png"
+               imagine.views = "100,000,000"
+               imagine.date = "2 month ago"
+               imagine.title = "The Chainsmokers - Imagine"
+               
+               
+               let bobDylan = Video()
+               bobDylan.channel = channel
+               bobDylan.thumbnailImageName = "thumbnail5.png"
+               bobDylan.views = "230,000,000"
+               bobDylan.date = "10 months ago"
+               bobDylan.title = "The Chainsmokers - Bob Dylan"
+
+               return [paris, closer, settingFires, allWeKnow, hello, imagine, bobDylan]
+     }()
+     
      override func viewDidLoad() {
           super.viewDidLoad()
           
@@ -72,12 +136,14 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
      
      override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
      
-          return 5
+          return videos!.count
      }
      
      override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeViewControllerCell
+          
+          cell.video = videos?[indexPath.item]
           
           return cell
      

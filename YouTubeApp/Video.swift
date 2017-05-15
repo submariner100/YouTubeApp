@@ -10,7 +10,7 @@ import Foundation
 
 class Video: NSObject {
      
-     var thumbnailImageNamee: String?
+     var thumbnailImageName: String?
      var title: String?
      var views: String?
      var date: String?
